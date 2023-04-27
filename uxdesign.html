@@ -24,23 +24,36 @@
   <nav class="navbar navbar-expand-lg navbar-light custom-navbar" style="font-family: 'Alegreya Sans SC', sans-serif;">
     <div class="container">
       <ul class="navbar-nav text-white full-width">
-        <li class="nav-item">
-          <a class="nav-link font-weight-bold" href="index.html" data-bs-toggle="tooltip" title="Home" data-bs-delay='{"hide": 0}'>Home</a>
+        <li class="nav-item dropdown d-lg-none">
+          <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="index.html">Home</a></li>
+            <li><a class="dropdown-item" href="projects.html">Coding</a></li>
+            <li><a class="dropdown-item" href="uxdesign.html">UX Design</a></li>
+            <li><a class="dropdown-item" href="tradart.html">Traditional Art</a></li>
+            <li><a class="dropdown-item" href="aboutme.html">About</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+          </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link font-weight-bold" href="projects.html" data-bs-toggle="tooltip" title="View coding projects" data-bs-delay='{"hide": 0}'>Coding</a>
+        <li class="nav-item d-none d-lg-block">
+          <a class="nav-link font-weight-bold" href="index.html">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link font-weight-bold" href="uxdesign.html" data-bs-toggle="tooltip" title="View UX projects" data-bs-delay='{"hide": 0}'>UX Design</a>
+        <li class="nav-item d-none d-lg-block">
+          <a class="nav-link font-weight-bold" href="projects.html">Coding</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link font-weight-bold" href="tradart.html" data-bs-toggle="tooltip" title="View traditional art pieces" data-bs-delay='{"hide": 0}'>Traditional Art</a>
+        <li class="nav-item d-none d-lg-block">
+          <a class="nav-link font-weight-bold" href="uxdesign.html">UX Design</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link font-weight-bold" href="aboutme.html" data-bs-toggle="tooltip" title="About Me" data-bs-delay='{"hide": 0}'>About</a>
+        <li class="nav-item d-none d-lg-block">
+          <a class="nav-link font-weight-bold" href="tradart.html">Traditional Art</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link font-weight-bold" href="contact.html" data-bs-toggle="tooltip" title="Contact Me" data-bs-delay='{"hide": 0}'>Contact</a>
+        <li class="nav-item d-none d-lg-block">
+          <a class="nav-link font-weight-bold" href="aboutme.html">About</a>
+        </li>
+        <li class="nav-item d-none d-lg-block">
+          <a class="nav-link font-weight-bold" href="contact.html">Contact</a>
         </li>
       </ul>
     </div>
@@ -78,8 +91,16 @@
       </div>
     </footer>  
   
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBud7mqnrWzD7WxHwne5yzSLg5eSt6pX9bSGFXYn5kuIoEJ6" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1RSwa1z7s3I3MI2g7KdJ6BpCp+jTfRtWW+06e8/t" crossorigin="anonymous"></script>
-  </body>
-
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+  
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+          var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+          })
+        });
+      </script>    
+    </body>
+  </html>
