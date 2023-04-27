@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="css/portfoliocss.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="images/webclip.png" rel="apple-touch-icon">
+    <title>Anna's Portfolio</title>
+  </head>
+
+<body>
+
+  <header>
+    <a href="index.html">
+      <img class="banner-image" src="images/Header.svg" loading="lazy" width="2017" alt="Banner with a Navajo rug design with a sego lily and circuitry" data-bs-toggle="tooltip" title="Home" data-bs-delay='{"hide": 0}'>
+    </a>
+  </header> 
+
+  <nav class="navbar navbar-expand-lg navbar-light custom-navbar" style="font-family: 'Alegreya Sans SC', sans-serif;">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav text-white full-width">
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="index.html" data-bs-toggle="tooltip" title="Home" data-bs-delay='{"hide": 0}'>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="projects.html" data-bs-toggle="tooltip" title="View coding projects" data-bs-delay='{"hide": 0}'>Coding</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="uxdesign.html" data-bs-toggle="tooltip" title="View UX projects" data-bs-delay='{"hide": 0}'>UX Design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="tradart.html" data-bs-toggle="tooltip" title="View traditional art pieces" data-bs-delay='{"hide": 0}'>Traditional Art</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="aboutme.html" data-bs-toggle="tooltip" title="About Me" data-bs-delay='{"hide": 0}'>About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="contact.html" data-bs-toggle="tooltip" title="Contact Me" data-bs-delay='{"hide": 0}'>Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="project-grid">
+    <div class="project">
+      <a href="https://github.com/annanizhoni/brainbounce.git" target="_blank">
+        <h2>Brain Bounce</h2>
+      </a>
+      <p>An interactive animation of a brain bouncing around a padded cell using JavaScript</p>
+      <div class="embedded-project">
+        <iframe id="project-iframe-1" src="https://annanizhoni.github.io/brainbounce/brainbounce.html" frameborder="0"></iframe>
+        <button class="fullscreen-btn" data-iframe-id="project-iframe-1">Fullscreen</button>
+      </div>
+    </div>
+    
+    <div class="project">
+      <a href="https://github.com/annanizhoni/baseballp5.git" target="_blank">
+        <h2>Baseball P5</h2>
+      </a>
+      <p>An interactive animation of a baseball traveling around a diamond built using the p5.js library.</p>
+      <div class="embedded-project">
+        <iframe id="project-iframe-2" src="https://annanizhoni.github.io/baseballp5/baseball.html" frameborder="0"></iframe>
+        <button class="fullscreen-btn" data-iframe-id="project-iframe-2">Fullscreen</button>
+      </div>
+    </div>
+    
+    <div class="project">
+      <a href="https://github.com/annanizhoni/eyemovement.git" target="_blank">
+        <h2>Eye Movement</h2>
+      </a>
+      <p>A visualization of eye movements based on cursor position using JavaScript.</p>
+      <div class="embedded-project">
+        <iframe id="project-iframe-4" src="https://annanizhoni.github.io/eyemovement/index.html" frameborder="0"></iframe>
+        <button class="fullscreen-btn" data-iframe-id="project-iframe-4">Fullscreen</button>
+      </div>
+    </div>
+    
+    <div class="project">
+      <a href="https://github.com/annanizhoni/bustracker.git" target="_blank">
+        <h2>Bus Tracker</h2>
+      </a>
+      <p>An animation showing bus stops along a route in California using JavaScript & the Google Maps API.</p>
+      <div class="embedded-project">
+        <video id="video-player" controls>
+          <source src="BusRouteMov.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <div class="project">
+      <a href="https://github.com/annanizhoni/pacmen.git" target="_blank">
+        <h2>PacMen Factory</h2>
+      </a>
+      <p>A project that generates PacMen and bounces them around the screen.</p>
+      <div class="embedded-project">
+        <iframe id="project-iframe-3" src="https://annanizhoni.github.io/pacmen/index.html" frameborder="0"></iframe>
+        <button class="fullscreen-btn" data-iframe-id="project-iframe-3">Fullscreen</button>
+      </div>
+    </div>
+
+  </main>
+      
+  <footer class="footer-grid mt-5" style="background-color: #00748C;">
+    <div class="copyright">
+      <p>© 2023 Anna Nizhoni</p>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/annanizhoni/" target="_blank"><img src="images/icon-_linkedin_.svg" loading="lazy" alt="LinkedIn"></a>
+      <a href="https://github.com/annanizhoni" target="_blank"><img src="images/icon-_github_.svg" loading="lazy" alt="GitHub"></a>
+      <a href="mailto:example@example.com" target="_blank"><img src="images/email.svg" loading="lazy" alt="Email"></a>
+    </div>
+  </footer>  
+  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBud7mqnrWzD7WxHwne5yzSLg5eSt6pX9bSGFXYn5kuIoEJ6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1RSwa1z7s3I3MI2g7KdJ6BpCp+jTfRtWW+06e8/t" crossorigin="anonymous"></script>
+    <script src="portfolioproject.js"></script>
+
+  </body>
+</html>
